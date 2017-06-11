@@ -11,7 +11,7 @@ def isPrime(x):
     else:
         while count < x:
             if x % count == 0:
-                prime = False
+                return False
             count += 2
     return prime
 
@@ -37,6 +37,6 @@ def factor(x):
         mylist += [x]
     return mylist
 
-print("#########")
+#print("#########")
 print(max(factor(600851475143)))
 print(max(factor(13195)))
